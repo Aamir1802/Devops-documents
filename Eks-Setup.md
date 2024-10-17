@@ -52,4 +52,8 @@ eksctl create cluster --name cluster-name --region region-name --node-type insta
 
 
  Step 4: After  practising, delete Cluster and other resources we have used in AWS Cloud to avoid billing
+  Deleting mumbai region cluster
  $eksctl delete cluster --name aamirit-cluster --region ap-south-1
+
+    steps to delete already created cluster from AWS GUI
+    A First click on cluster name link->Compute->ng-b54xxx(delete it)    
