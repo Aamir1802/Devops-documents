@@ -41,11 +41,7 @@ Attach created role to EKS Management Host
 
 Step 3: Create EKS Cluster using eksctl
 Syntax:
-eksctl create cluster --name cluster-name
---region region-name
---node-type instance-type
---nodes-min 2
---nodes-max 2 \ --zones ,
+eksctl create cluster --name cluster-name --region region-name --node-type instance-type --nodes-min 2 --nodes-max 2 \ --zones ,
 
 
  For mumbai Region server
@@ -53,3 +49,7 @@ eksctl create cluster --name cluster-name
 
  For US Region server
  $eksctl create cluster --name aamirit-cluster  --region us-east-1 --node-type t2.medium  --zones us-east-1a,us-east-1b
+
+
+ Step 4: After  practising, delete Cluster and other resources we have used in AWS Cloud to avoid billing
+ $eksctl delete cluster --name aamirit-cluster --region ap-south-1
